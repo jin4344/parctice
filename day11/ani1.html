@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ani1</title>
+    <style>
+        .box{
+            box-sizing: border-box;
+            border: 1px solid #000000;
+            margin-top: 100px;
+            margin-left: 100px;
+            padding: 20px;
+            height: 80px;
+            animation:moving 3s infinite alternate;
+            /*
+            name : moving (사용할 애니메이션 이름)
+            duration : 3s (지속 시간)
+            count : infintite (반복 횟 수)
+            normal : 완료 후 초기상태로
+            direction : alternate
+                (0 - 100 or 0-100-0-100(왕복할지 말지))
+            reverse : 거꾸로 진행
+            */
+        }
+        @keyframes moving {
+            from{
+                width: 170px;
+                background-color: ghostwhite;
+                padding-left: 10px;
+                opacity: 0.5;
+                transform: scale(0.5) rotate(30deg);
+            }
+            50%{
+                width: 300px;
+                background-color: honeydew;
+                opacity: 1;
+                padding-left: 140px;
+                transform: scale(1) rotate(-15deg);
+            }
+            to{
+                width: 300px;
+                background-color: orange;
+                padding-left: 140px;
+                opacity: 1;
+                transform: rotate(-180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>ani1</h2>
+     <div class="box">
+         <h2>css animation</h2>
+     </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{text-align: center;}
+        #container{
+            width: 800px;
+            height: 400px;
+            margin:0 auto;
+            border-radius: 30px;
+            border: 5px;
+            padding: 30px;
+        }
+        #container:hover>.box{
+            transform: rotate(720deg);
+            margin-left: 650px;
+        }
+        #no-delay{
+            transition-property: all;
+            transition-timing-function: linear;
+             transition-duration: 3s;
+             /* transition: all linear 3s; */
+             /* 위 3줄을 축약한 코드 */
+        }
+        #delay{
+            transition-duration: 2s;
+            transition-delay: 1s;
+        }
+        .box{ width: 140px;
+             height: 140px;
+             background-color: pink;
+             margin-bottom: 50px;
+             font-size: 20px;
+        }
+        p{text-align: center;
+            line-height: 130px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="no-delay" class="box">
+            <p>(^^)7</p>
+        </div>
+        <div class="box" id="delay">
+            <p>(-_-)b</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ margin-left: 100px;}
+        p{width: 400px;
+            padding: 15px;
+            border: 3px solid navy;
+        }
+        #trans1{
+            background-color: deeppink;
+            transform: translate(30px, 30px);
+            /* 이동으로 x축,y축을 값만큼 이동 시킨다 */
+        }
+        #trans2{
+            background-color: aquamarine;
+            transform: rotate(60deg);
+            /* 회전으로 값만큼 시계방향으로 돌린다 deg는 각도 */
+        }
+        #trans3{
+            background-color: skyblue;
+            transform: scale(1.5,1.2);
+            /* 크기로 x축,y축을 값만큼 키운다는 것 */
+        }
+        #trans4{
+            background-color: gold;
+            transform: skew(30deg, 15deg);
+            /* 기울기로 x/y축을 값 만큼 기우린다 */
+        }
+        #gradient{
+            background-color: cyan;
+            background: linear-gradient(to bottom, azure 50%, cyan 30%); 
+            /* 그라데이션 효과 tol left로 하면 세로로 바뀐다 */
+        }
+        #gradient2{background: radial-gradient(red, blue);}
+        /* 가운데와 모서리를 다르게 */
+        #gradient3{ background: linear-gradient(transparent, red);}
+        /* 두명하다 점점 색이 진해진다. */    
+    </style>
+</head>
+<body>
+    <h2>transfrom</h2>
+    <p id="trans1">orginal</p>
+    <p id="trans2">translate</p>
+    <p id="trans3">rotate</p>
+    <p id="trans4">scale</p>
+    <p id="trans5">skew</p>
+    <p id="gradient">gradient</p>
+    <p id="gradient2">gradient</p>
+    <p id="gradient3">gradient</p>
+
+</body>
+</html>

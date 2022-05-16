@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin : 30px;
+            border: 1px solid black;
+        }
+        #bg_tr{
+            background-color: coral;
+            transition: background-color linear 2s;
+        }
+        #bg_tr:hover{
+            /* 마우스 올리면 일어나는 반응 */
+            background-color: navy;
+            border: 5px dotted red;
+        }
+        #border_tr{
+            background-color: springgreen;
+            border: 10px dotted deeppink;
+            transition: all ease 2s;
+            /* 모든 속성 값이 편경된다 */
+        }
+        #border_tr:hover{
+            background-color: purple;
+            border: 10px dashed powderblue;
+            border-radius: 50%;
+            /* 모든 속성 값이 편경된다 */
+        }
+    </style>
+</head>
+<body>
+    <h2>transtion</h2>
+    <div id="bg_tr"></div>
+    <div id="border_tr"></div>
+</body>
+</html>
