@@ -1,11 +1,7 @@
 #mainImage{
-    width: 300%;
+    width: 490%;
     height: 300px;
     background: url(./이미지용/홈피용수정.png) no-repeat fixed;
-    right:300px;
     padding : 1%;
     position: relative;
-    margin: 0 auto;
-    left:30%;
-
-}
+} 
